@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Valerii Dudko](https://up.htmlacademy.ru/htmlcss/36/user/1799237).
-* Наставник: [Ирина Малиновская] (https://htmlacademy.ru/profile/irina-malinovskaya).
+* Наставник: [Ирина Малиновская] (https://htmlacademy.ru/irina-malinovskaya).
 
 ---
 
