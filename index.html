@@ -5,11 +5,13 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-    <body>
-      <header class="page-header">
+
+  <body>
+
+    <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" src="images/header/logo.svg" width="140" height="70,05" alt="Логотип Седона».">
+            <img class="page-header-logo" src="images/logo.svg" width="140" height="70,05" alt="Логотип Седона».">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -26,7 +28,7 @@
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <img class="navigation-link" src="images/header/search.svg" width="20px" height="20px" alt="Поиск">
+                <img class="navigation-link" src="images/icons/search-icon.svg" width="20px" height="20px" alt="Поиск">
                 <span class="visually-hidden">
                   Поиск
                 </span>
@@ -34,7 +36,7 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <img class="navigation-item" src="images/header/heart.svg" width="20px" height="20" alt="Избранное">
+                <img class="navigation-item" src="images/icons/favorites.svg" width="20px" height="20" alt="Избранное">
                 <span class="visually-hidden">
                   Избранное
                 </span>
@@ -48,12 +50,12 @@
               </a>
             </li>
           </ul>
-          </header>
+    </header>
 
      <section class="hero">
       <main class="mailn-index">
         <h1 class="visually-hidden">Sedona</h1>
-        <img src="images/welcome.svg" width="456" height="352" alt="Приветсвие Седона">
+        <img src="images/welcome-text.svg" width="456" height="352" alt="Приветсвие Седона">
       </section>
 
         <section class="advantages">
@@ -66,7 +68,7 @@
             <li class="advantages-item">
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <div><img class="advantages-item" src="images/photo-1.jpg" width="800" height="385" alt="Фотография гостиницы"></div>
+              <div><img class="advantages-item" src="images/content/about-image-1.jpg" width="800" height="385" alt="Фотография гостиницы"></div>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -84,7 +86,7 @@
             </li>
 
               <li class="advantages-item">
-                <div><img class="advantages-item" src="images/photo-2.jpg" width="800" height="385" alt="Фотография Каньона"></div>
+                <div><img class="advantages-item" src="images/content/about-image-2.jpg" width="800" height="385" alt="Фотография Каньона"></div>
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <p class="advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
@@ -97,17 +99,17 @@
               <h2 class="services-hidden">Услуги</h2>
               <ul class="services-list">
                 <li class="services-item">
-                    <img class="services-icon" src="images/home.svg" width="75px" height="72px" alt="Дом">
+                    <img class="services-icon" src="images/icons/services-house.svg" width="75px" height="72px" alt="Дом">
                     <span class="services-name">Жильё</span>
                     <p class="services-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="services-item">
-                    <img class="services-icon" src="images/food.svg" width="74px" height="70px" alt="Бургер">
+                    <img class="services-icon" src="images/icons/services-food.svg" width="74px" height="70px" alt="Бургер">
                     <span class="services-name">Еда</span>
                     <p class="services-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="services-item">
-                    <img class="services-icon" src="images/Present.svg" width="64px" height="76px" alt="Подарок">
+                    <img class="services-icon" src="images/icons/services-souvenir.svg" width="64px" height="76px" alt="Подарок">
                     <span class="services-name">Сувениры</span>
                     <p class="services-text">Не только китайского, но и настоящего местного производства!</p>
                 </li>
@@ -116,23 +118,23 @@
 
         <section class="search-hotel">
           <h2 class="search-hotel-title">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="search-hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="buttom-search-hotel" href="#">Поиск гостиницы в седоне</a>
         </section>
 
         <section class="email">
-          <img class="email" src="images/Subscribe.png" width="1200px" height="414.86px" alt="фон для рассылки">
           <h2 class="email-title">Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="email-form-email">
-            <label for="email-email">Ваш e-mail</label>
-            <input type="text" id="mailing-email" name="email-email" placeholder="Ваш e-mail">
-          </p>
-           <button class="button" type="submit">Подписаться</button>
+          <p class="email-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="subscribe-email">
+              <span class="visually-hidden">E-mail</span>
+            </label>
+            <input class="field" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail" required="">
+            <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
+
       <footer class="page-footer">
         <section class="footer-social">
           <h2 class="visual-hidden">Мы в сети</h2>
@@ -140,19 +142,19 @@
             <li class="footer-social-item">
                 <a class="button" href="https://t.me/htmlacademy">
                     <span class="visually-hidden">Телеграм</span>
-                    <img class="footer-social-item" src="images/footer/telegram.svg" width="24" height="14" alt="Телегра">
+                    <img class="footer-social-item" src="images/icons/telegram-icon.svg" width="24" height="14" alt="Телегра">
                 </a>
             </li>
             <li class="footer-social-item">
                 <a class="button" href="https://vk.com/htmlacademy">
                     <span class="visually-hidden">ВКонтакте</span>
-                    <img class="footer-social-item" src="images/footer/vk.svg" width="24" height="14" alt="ВКонтакте">
+                    <img class="footer-social-item" src="images/icons/vk-icon.svg" width="24" height="14" alt="ВКонтакте">
                 </a>
             </li>
             <li class="footer-social-item">
                 <a class="button" href="https://www.youtube.com/user/htmlacademyru">
                     <span class="visually-hidden">Youtube</span>
-                    <img class="footer-social-item" src="images/footer/youtube.svg" width="24" height="14" alt="Youtube">
+                    <img class="footer-social-item" src="images/icons/youtube-icon.svg" width="24" height="14" alt="Youtube">
                 </a>
             </li>
         </ul>
@@ -163,7 +165,7 @@
         </section>
         <section class="footer-logo">
           <h2 class="visual-hidden">Логотип</h2>
-          <img class="footer-logo" src="images/footer/logo_htmlacademy.png" width="114,9" height="32,9" alt=".html Academy">
+          <img class="footer-logo" src="images/html-academy-logo.svg" width="114,9" height="32,9" alt=".html Academy">
         </section>
       </footer>
     </body>
