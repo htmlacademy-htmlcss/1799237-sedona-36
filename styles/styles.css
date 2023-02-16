@@ -346,7 +346,13 @@ line-height: 26px;
 .product-card {
   background-color: #FFFFFF;
   display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
 }
+
+
 
 
 .product-card-link {
