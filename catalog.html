@@ -6,11 +6,11 @@
     <title>Каталог</title>
   </head>
   <body>
-
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/logo.svg"140" height="70,05" alt="Логотип Седона».">
+          <img class="page-header-logo" src="images/logo.svg" width="140" height="70,05" alt="Логотип Седона».">
         </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -51,9 +51,9 @@
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main-inner main-container">
       <div class="inner-container">
-        <div class="inner-heder-filter-container">
+        <div class="inner-heder-filter-container page-container">
          <header class="inner-header">
           <h1 class="inner-title">Гостиницы Седоны</h1>
 
@@ -69,7 +69,9 @@
          </ul>
          </header>
          <div class="catalog-products">
+          <!--временно добавим атрибут hidden, чтобы заголовок не рушил сетку-->
           <h2 class="visually-hidden">Параметры поиска</h2>
+          <!-- Фильтрация -->
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -257,6 +259,7 @@
     </main>
 
       <footer class="page-footer">
+        <div class="page-footer-container">
         <section class="footer-social">
           <h2 class="visual-hidden">Мы в сети</h2>
           <ul class="footer-social-list">
@@ -288,5 +291,7 @@
           <h2 class="visual-hidden">Логотип</h2>
           <img class="footer-logo" src="images/html-academy-logo.svg" width="114,9" height="32,9" alt=".html Academy">
         </section>
+        </div>
       </footer>
+      </div>
   </body>
