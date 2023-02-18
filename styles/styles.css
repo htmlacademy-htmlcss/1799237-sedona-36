@@ -40,6 +40,19 @@ html{
   height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*header*/
+
 body {
   margin: 0;
   display: flex;
@@ -79,34 +92,59 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 0 70px;
 }
 
-.advantages-list{
+.navigation-list {
+  width: 507px;
   margin: 0;
   padding: 0;
-  width: 507px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.navigation-link{
-  font-family: "PT Sans", sans-serif;
+.navigation-link {
+  font-family: 'PT Sans';
+  font-size:20px;
   line-height: 24px;
-  color: #000000;
   font-weight: 700;
-  text-align: center;
-  background-color: #ffffff;
+  color:#000000;
   text-decoration: none;
-  text-transform: capitalize;
+  padding: 20px 16px;
+  display: block;
 }
-.navigation-user {
-  max-width: 250px;
+
+.navigation-user .navigation-link {
+  max-width: 350px;
   margin-left: auto;
 }
+
+.navigation-button{
+  background-color:#756157;
+  text-decoration: none;
+  padding:8px 34px;
+}
+
+.navigation-user-button{
+  display:inline-block;
+  margin:auto 0;
+}
+
+
+.main-container {
+  flex-grow: 1;
+}
+
+
+
 
 .page-container {
   width: 1200px;
   margin: 0 auto;
 }
 
+/*body*/
 
 .hero {
   color: #000000;
@@ -122,6 +160,8 @@ body {
 .page-header-logo{
   display:block;
 }
+
+
 .advantages-subtitle{
   font-size: 30px;
   line-height: 36px;
@@ -146,6 +186,7 @@ body {
   text-align: center;
   list-style-type:none;
   margin-bottom: 64px;
+  width: 507px;
 }
 
 .advantages-item {
