@@ -67,8 +67,7 @@ body {
 
 .container{
   margin: 0 auto;
-  width: 1280px;
-  flex-grow: 1;
+  width: 1200px;
 }
 
 .button{
@@ -90,18 +89,25 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
   padding: 0 70px;
 }
 
 .navigation-list {
-  width: 507px;
+  width: 339px;
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.navigation-user{
+margin: 0;
+padding: 0;
+list-style: none;
+margin-left: auto;
+display: flex;
 }
 
 .navigation-link {
@@ -163,24 +169,31 @@ body {
   margin:0 auto;
 }
 
+
+/*Приемущества*/
 .advantages {
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 .advantages-subtitle{
-  font-size: 30px;
+  font-size: normal;
   line-height: 36px;
   font-weight: 700;
   color:#000000;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  padding-left: 290px;
+  padding-right: 290px;
 
 }
 .advantages-text{
   font-size: 22px;
   line-height: 26px;
   margin: 0;
+  padding-left: 275px;
+  padding-right: 275px;
 
 }
 .advantages-subtitle-about {
@@ -191,52 +204,93 @@ body {
   margin-bottom: 90px;
 }
 
+
+
+.advantages-title{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage-description{
+  font-family: 'PT Sans';
+  font-style: normal;
+  text-align: center;
+}
+
 .advantages-list {
   margin: 0;
   padding: 0;
-  display:flex;
-  flex-wrap: wrap;
-  text-align: center;
   list-style-type:none;
-  margin-bottom: 64px;
-  width: 507px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages-item-container{
+  width: 230px;
+  min-height: 200px;
+  padding: 90px 85px;
 }
 
-.advantages-item {
-  width: 400px;
-
-
-}
-.advantages-item-images{
-  width: 800px;
+.advantages-item-color{
+  background: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
+.advantages-item-color-center{
+  background: rgba(131, 179, 211, 0.2);
 }
 
-.index-columns {
-  color: #242424;
-  background-color: #F2F2F2;
+.advantages-item-wide{
+  display: flex;
+  background-color: #82B3D3;
 
 }
+.advantages-item-wide-reverse{
+flex-direction: row-reverse;
+}
 
-.services {
-  text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+
+/*Приезжай, услуги*/
+
+.services-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   text-align: center;
-  width: 400px;
+  margin-top: 64px;
+  text-transform: uppercase;
+  width: 505px;
+  display: flex;
+  padding-left: 347.5px;
+  padding-right: 347.5px;
 }
+
+.services-description {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  display: flex;
+  padding-left: 355.5px;
+  padding-right: 355.5px;
+  padding-top: 20px;
+  }
 
 .services-list{
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-
 }
 
 .services-item{
@@ -246,17 +300,6 @@ body {
 }
 
 
-.services-title {
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-}
-
-.services-description {
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-}
 .services-name {
 font-weight: 700;
 font-size: 24px;
@@ -267,6 +310,10 @@ font-weight: 400;
 font-size: 18px;
 line-height: 21px;
 }
+
+
+
+
 .search-hotel {
 font-family: "PT Sans", sans-serif;
 text-align: center;
