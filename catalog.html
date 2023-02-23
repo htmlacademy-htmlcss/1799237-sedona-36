@@ -7,67 +7,66 @@
   </head>
   <body>
     <div class="container">
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/logo.svg" width="140" height="70,05" alt="Логотип Седона».">
-        </a>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#"></a>
-              <img class="navigation-link" src="images/icons/search-icon.svg" width="20px" height="20px" alt="Поиск">
-              <span class="visually-hidden">
-                  Поиск
-                </span>
+      <header class="page-header">
+        <nav class="navigation">
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" src="images/logo.svg" width="140" height="70,05" alt="Логотип Седона».">
+          </a>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+            <ul class="navigation-user">
+              <li class="navigation-item ">
+                <a class="navigation-link" href="#">
+                 <img class="navigation-item" src="images/icons/search-icon.svg" width="20px" height="20px" alt="Поиск">
+                 <span class="visually-hidden">
+                    Поиск
+                  </span>
                 </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">
+                  <img class="navigation-item" src="images/icons/favorites.svg" width="20px" height="20px" alt="Избранное">
+                  <span class="visually-hidden">
+                    Избранное
+                  </span>
+                </a>
+              </li>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img class="navigation-item" src="images/icons/favorites.svg" width="20px" height="20" alt="Избранное">
-                <span class="visually-hidden">
-                  Избранное
-                </span>
+            <li class="navigation-item navigation-user-button">
+              <a class="navigation-link navigation-button button">Хочу сюда!
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">
-                  Хочу сюда
-                </span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+            </ul>
+          </nav>
+        </header>
 
       <main class="main-inner main-container">
-      <div class="inner-container">
+       <div class="inner-container">
         <div class="inner-heder-filter-container page-container">
-         <header class="inner-header">
+         <div class="inner-header">
           <h1 class="inner-title">Гостиницы Седоны</h1>
-
-         <ul class="breadcrumbs">
+          <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a>
+            <img class="breadcrumbs-item" src="images/icons/home-vector.svg"  alt="Дом">
+            </a>
           </li>
           <li class="breadcrumbs-item">
-            <img class="breadcrumbs-item" src="images/icons/home-vector.svg" alt="Дом">
             <img class="breadcrumbs-item" src="images/icons/arrow-white.svg" alt="стрелка перехода">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
          </ul>
-         </header>
+         </div>
+
          <div class="catalog-products">
           <!--временно добавим атрибут hidden, чтобы заголовок не рушил сетку-->
           <h2 class="visually-hidden">Параметры поиска</h2>
@@ -136,27 +135,26 @@
             <button class="button" type="reset">Сбросить</button>
           </form>
         </div>
-      </div>
+       </div>
+       <div class="select-control-hotel">
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвое</option>
             <option value="popular">Сначала популярное</option>
             <option value="expensive">Сначала дорогое</option>
-          </select>
-
-          <a href="#" class="button button-light">
+           <a href="#" class="button button-light">
             <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button" href="#">
+           </a>
+           <a class="button" href="#">
             <span class="visually-hidden">Показать картинки</span>
-          </a>
-          <a class="button" href="#">
+           </a>
+           <a class="button" href="#">
             <span class="visually-hidden">Показать список</span>
-          </a>
+           </a>
           <img class="select-control" src="images/icons/view-button-1.svg" alt="отображение карточек">
           <img class="select-control" src="images/icons/view-button-2.svg" alt="отображение карточек">
           <img class="select-control" src="images/icons/view-button-3.svg" alt="отображение карточек">
-
-
+        </select>
+      </div>
           <ul class="product-card">
             <li class="product-card">
              <a class="product-card-link" href="product.html">
@@ -299,5 +297,5 @@
         <span class="visually-hidden">Логотип HTML-Academy</span>
       </a>
     </footer>
-      </div>
+    </div>
   </body>

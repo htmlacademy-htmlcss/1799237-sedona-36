@@ -401,8 +401,6 @@ padding-right: 304px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
 }
 
@@ -503,34 +501,64 @@ width: 232px;
   display:block;
 }
 
-/*catalog8*/
+/*catalog*/
 
 .inner-container{
-
   color:#FFFFFF;
   background-color: #3e75a0;
   background-image: url("../images/hotels-filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding:70px;
+  padding-top:35px;
+  margin-bottom:50px;
 }
 
-.inner-header-title {
+.inner-heder-filter-container{
   width:1060px;
   margin:0 auto;
 }
+
 .inner-title{
-  font-family: "PT Sans", sans-serif;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin:0;
+  margin-bottom:8px;
 }
+
+/*хлебные крошки*/
 
 .breadcrumbs {
   color: #FFFFFF;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
 }
 
-.breadcrumbs-link {
-  color: #FFFFFF;
+.breadcrumbs-item{
+  margin-right: 10px;
+}
+
+.button .select-control-hotel{
+  width: 48px;
+  height: 48px;
+}
+
+
+.select-control{
+  display: flex;
+  font-size: 18px;
+width: 292px;
+border: 2px solid #E5E5E5;
+border-radius: 4px;
+margin-left: auto;
+margin-right: 70px;
+padding-right: 20px;
+box-sizing: border-box;
 }
 
 .catalog-filter-title {
@@ -563,9 +591,6 @@ width: 232px;
   gap: 20px;
 
 }
-
-
-
 
 .product-card-link {
   text-decoration: none;
