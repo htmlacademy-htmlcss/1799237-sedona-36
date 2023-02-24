@@ -56,9 +56,7 @@
           <h1 class="inner-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a>
-            <img class="breadcrumbs-item" src="images/icons/home-vector.svg"  alt="Дом">
-            </a>
+            <a><img class="breadcrumbs-item" src="images/icons/home-vector.svg"  alt="Дом"></a>
           </li>
           <li class="breadcrumbs-item">
             <img class="breadcrumbs-item" src="images/icons/arrow-white.svg" alt="стрелка перехода">
@@ -68,35 +66,33 @@
          </div>
 
          <div class="catalog-products">
-          <!--временно добавим атрибут hidden, чтобы заголовок не рушил сетку-->
           <h2 class="visually-hidden">Параметры поиска</h2>
-          <!-- Фильтрация -->
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group comfort">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list">
+            <ul class="catalog-filter-list ">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="waterpool" checked>
                   Бассейн
                 </label>
-              </li>
-             <li class="catalog-filter-item">
-              <label class="control">
-              <input class="control-input" type="checkbox" name="parking" checked>
-              Парковка
-              </label>
-          </li>
-          <li class="catalog-filter-item">
-            <label class="control">
-              <input class="control-input" type="checkbox" name="Wi-Fi" >
-              Wi-Fi
-            </label>
-          </li>
+               </li>
+               <li class="catalog-filter-item">
+               <label class="control">
+               <input class="control-input" type="checkbox" name="parking" checked>
+               Парковка
+               </label>
+               </li>
+               <li class="catalog-filter-item">
+               <label class="control">
+               <input class="control-input" type="checkbox" name="Wi-Fi" >
+               Wi-Fi
+               </label>
+             </li>
             </ul>
-            </fieldset>
+          </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group type-house ">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -131,8 +127,10 @@
               </label>
               <input type="range" min="1" max="10">
             </fieldset>
-            <button class="button" type="submit">Показать</button>
-            <button class="button" type="reset">Сбросить</button>
+            <div class="filter-button">
+            <button class="button catalog-filter-button select" type="submit">Показать</button>
+            <button class="button catalog-filter-button reset" type="reset">Сбросить</button>
+          </div>
           </form>
         </div>
        </div>
