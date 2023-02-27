@@ -1,38 +1,20 @@
-@font-face {
+@font-face{
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
-@font-face {
+
+@font-face{
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
-  font-display: swap;
-}
+
+
 html {
   height: 100%;
 }
@@ -59,25 +41,30 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #f2f2f2;
+  background-color: #FFFFFF;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   margin: 0 auto;
-  width: 1200px;
+  width: 1280px;
   min-height: 100%;
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .button {
-
-  color: #ffffff;
-  background-color: #82b3d3;
-  text-transform: uppercase;
-  border-width: 0;
-  border-radius: 4px;
+font-family: "PT Sans", sans-serif;
+font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+color: #FFFFFF;
+background-color: #82B3D3;
+text-transform: uppercase;
+border-width: 0;
+border-radius: 4px;
 }
 
 .page-header {
@@ -215,7 +202,6 @@ body {
 
 .advantages-list {
   margin: 0;
-  padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -258,7 +244,6 @@ body {
   text-align: center;
   margin-top: 64px;
   text-transform: uppercase;
-  width: 505px;
   display: flex;
   padding-left: 347.5px;
   padding-right: 347.5px;
@@ -402,6 +387,7 @@ body {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 20px;
+  background-color: #F2F2F2;
 }
 
 .field-inner {
@@ -679,15 +665,37 @@ margin-right: 140px;
   margin: 0 auto;
 }
 
-.product-card{
-  margin: 0;
+.product-list{
   padding: 0;
+  margin-top: 139px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+
 }
+
+.product-card{
+  box-sizing: border-box;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto repeat(3, min-content);
+  grid-column-gap: 20px;
+  grid-row-gap: 16px;
+  }
 
 .product-card-link {
-  text-decoration: none;
+  grid-column: 1/-1;
 }
 
+.product-card-image{
+  object-fit: contain;
+  margin-bottom:16px;
+
+}
 .product-card-title {
   font-family: "PT Sans" sans-serif;
   font-weight: 700;
@@ -702,13 +710,54 @@ margin-right: 140px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  justify-self: end;
 }
+
+.product-card-button{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
+
+.hotel-card-button{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
+
 .product-card-type {
   font-family: "PT Sans" sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.hotel-card-rating{
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 8px;
 }
 
 /*pagination*/
@@ -762,4 +811,24 @@ text-transform: uppercase;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.email-catalog {
+  color: #000000;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+.email-title-catalog {
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
 }
