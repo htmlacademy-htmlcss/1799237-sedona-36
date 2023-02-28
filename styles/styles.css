@@ -49,7 +49,7 @@ body {
   flex-direction: column;
   background-color: #FFFFFF;
   margin: 0 auto;
-  width: 1280px;
+  width: 1200px;
   min-height: 100%;
   box-shadow:0 0 15px rgba(0, 0, 0, 0.2);
 
@@ -145,7 +145,6 @@ border-radius: 4px;
   background-size: 100% auto;
   padding-top: 51px;
   padding-bottom: 82px;
-  margin-bottom: 69px;
 }
 
 .hero-container {
@@ -170,6 +169,7 @@ border-radius: 4px;
   margin: 0;
   padding-left: 290px;
   padding-right: 290px;
+  padding-top: 64px;
 }
 .advantages-text {
   font-size: 22px;
@@ -203,6 +203,7 @@ border-radius: 4px;
 
 .advantages-list {
   margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -243,12 +244,12 @@ border-radius: 4px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  margin-top: 64px;
   text-transform: uppercase;
   display: flex;
   padding-left: 347.5px;
   padding-right: 347.5px;
   padding-bottom: 20px;
+  padding-top: 64px;
 }
 
 .services-description {
@@ -480,7 +481,7 @@ border-radius: 4px;
   margin-bottom: 50px;
 }
 
-.inner-heder-filter-container {
+.inner-header-filter-container {
   width: 1060px;
   margin: 0 auto;
 }
@@ -757,6 +758,11 @@ margin-right: 140px;
   text-transform: uppercase;
   color: #333333;
   padding: 8px;
+}
+
+.rating-area{
+  margin: 0;
+  height: 37px;
 }
 
 /*pagination*/
