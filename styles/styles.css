@@ -56,17 +56,83 @@ body {
 
 
 .button {
-font-family: "PT Sans", sans-serif;
-font-size: 16px;
-line-height: 20px;
-font-weight: 700;
-color: #FFFFFF;
-background-color: #82B3D3;
-text-transform: uppercase;
-border-width: 0;
-border-radius: 4px;
-cursor: pointer;
+  font: inherit;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 8px;
+  display: inline-block;
+  text-decoration: none
 }
+
+
+.button-blue{
+  background-color: #82B3D3;
+}
+
+.button-blue:hover{
+  background-color: #68A2CA;
+}
+
+.button-blue:focus{
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.button-blue:active{
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown{
+  background-color: #756157;
+}
+
+.button-brown:hover{
+  background-color: #615048;
+}
+
+.button-brown:focus{
+  background-color: #615048;
+  outline: none;
+}
+
+.button-brown:active{
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.current-green-button{
+  background-color: #7DB54F;
+}
+
+.current-green-button:hover{
+  background-color: #6C9E42;
+}
+
+.current-green-button:focus{
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.current-green-button:active{
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue:disabled,
+.button-brown:disabled,
+.current-green-button:disabled{
+  background-color: #E5E5E5;
+  cursor: default;
+}
+
+
 
 .page-header {
   background-color: #ffffff;
@@ -113,9 +179,13 @@ cursor: pointer;
 }
 
 .navigation-button {
-  background-color: #756157;
   text-decoration: none;
-  padding: 8px 34px;
+  padding: 8px;
+  width: 160px;
+  text-align: center;
+  margin: auto 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .navigation-user-button {
@@ -796,12 +866,13 @@ cursor: pointer;
   box-sizing: border-box;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  padding: 20px;
+  padding: 19px 20px;
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: auto repeat(3, min-content);
   grid-column-gap: 20px;
   grid-row-gap: 16px;
+  row-gap: 16px;
   }
 
 .product-card-link {
@@ -829,7 +900,7 @@ cursor: pointer;
   color: #333333;
   justify-self: end;
 }
-
+/*
 .product-card-button{
   font-family: 'PT Sans';
   font-style: normal;
@@ -840,8 +911,8 @@ cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  }
-
+  }*/
+/*
 .hotel-card-button{
   font-family: 'PT Sans';
   font-style: normal;
@@ -852,6 +923,16 @@ cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  }*/
+
+  .hotel-card-button-about{
+    text-align: center;
+    align-self: center;
+    font-size: 16px;
+  }
+
+  .hotel-card-button{
+    font-size: 16px;
   }
 
 .product-card-type {
