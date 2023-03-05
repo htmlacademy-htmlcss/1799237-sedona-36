@@ -679,7 +679,7 @@ body {
 }
 
 /*хлебные крошки*/
-
+/*
 .breadcrumbs {
     list-style-type: none;
   display: flex;
@@ -697,6 +697,81 @@ body {
 .button .select-control-hotel {
   width: 48px;
   height: 48px;
+}
+*/
+.breadcrumbs{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom:40px;
+  align-items: center;
+}
+
+.breadcrumbs-icon{
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+
+.item-icon{
+  min-width: 12px;
+  min-height: 12px;
+}
+
+.breadcrumbs-item a{
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.breadcrumbs-icon-state{
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-item{
+  margin-right: 28px;
+  position: relative;
+  display: block;
+}
+
+.breadcrumbs-item::after{
+  content: url("../images/icons/arrow-white.svg");
+  width: 7px;
+  height: 10px;
+  position: absolute;
+  right: -18px;
+}
+
+.breadcrumbs-item:last-child::after{
+  content:none;
+}
+
+.breadcrumbs-link{
+  color:#FFFFFF;
+}
+
+.breadcrumbs-link:hover .breadcrumbs-icon-state{
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus .breadcrumbs-icon-state{
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-link:active .breadcrumbs-icon-state{
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link-state:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link-state:focus{
+  color: #FFFFFF;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link-state:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*параметры поиска*/
