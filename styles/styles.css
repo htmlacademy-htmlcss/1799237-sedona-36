@@ -633,7 +633,7 @@ body {
   text-decoration: none;
   padding: 8px 50px;
   text-transform: uppercase;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
 }
 
@@ -1110,9 +1110,6 @@ body {
   background-color: #E6E6E6;
 }
 
-/* .range-input:focus-visible{
-  outline:3px solid #83B3D3;
-} */
 
 .range-input:active {
   outline: 2px solid #000000;
@@ -1472,15 +1469,16 @@ body {
   line-height: 28px;
   font-weight: 700;
   margin: 0;
+  color: #000000;
 }
 
 .product-card a {
   text-decoration: none;
-  color: #000000;
+
 }
 
 .product-card-price {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1503,7 +1501,7 @@ body {
 }
 
 .product-card-type {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1513,7 +1511,7 @@ body {
 .hotel-card-rating {
   background: #F2F2F2;
   border-radius: 4px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1531,9 +1529,7 @@ body {
   margin: 0;
   height: 37px;
 }
-li a:nth-of-type(2) {
-  color: #ffffff;
-}
+
 
 /*pagination*/
 .pagination {
