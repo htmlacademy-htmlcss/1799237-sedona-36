@@ -569,65 +569,22 @@ body {
   list-style-type: none;
 }
 
-.services-item {
-  width: 400px;
-  height: 385px;
-  padding: 183px 85px 81px 85px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-
-
-}
-
-.services-icon-house {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.services-name {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  -ms-flex-positive: 0;
-      flex-grow: 0;
+.services-title {
+  margin-bottom: 30px;
 }
 
 .services-text {
   margin: 0;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #333333;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  -ms-flex-positive: 0;
-      flex-grow: 0;
-
 }
+
+.services-item {
+  width: 400px;
+  padding: 183px 85px 81px 85px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
 
 .services-house::before {
   content: url("../images/icons/services-house.svg");
