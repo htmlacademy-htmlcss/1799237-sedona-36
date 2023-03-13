@@ -295,9 +295,7 @@ body {
 }
 
 .navigation-user-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+padding-top: 14px;
 }
 
 .navigation-button {
@@ -482,6 +480,7 @@ body {
   margin: 0;
   width: 800px;
   height: 385px;
+  object-fit: fill;
 }
 
 .advantages-title,
@@ -892,6 +891,7 @@ body {
 
 .breadcrumbs-icon-state {
   fill: #FFFFFF;
+
 }
 
 .breadcrumbs-item {
@@ -915,6 +915,7 @@ body {
 .breadcrumbs-link {
   color: #FFFFFF;
 }
+.
 
 .breadcrumbs-link:hover .breadcrumbs-icon-state {
   fill: rgba(255, 255, 255, 0.6);
@@ -926,6 +927,7 @@ body {
 
 .breadcrumbs-link:active .breadcrumbs-icon-state {
   fill: rgba(255, 255, 255, 0.3);
+
 }
 
 .breadcrumbs-item:not(:last-child) .breadcrumbs-link-state:hover {
@@ -1597,6 +1599,7 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
+  pointer-events: none;
 }
 
 .pagination-item a {
